@@ -18,7 +18,6 @@
 - 01Configure
 - 02EntitiesAndDbContext
 - 03ServiceConfigure
-- 04FirstDI
-- 05Querying
-- 06DMLConcurrency
-- 07SecondDI
+- 04Querying
+- 05DMLConcurrency
+- 06SecondDI
