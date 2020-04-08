@@ -8,6 +8,8 @@
 - dotnet add package Microsoft.Extensions.Configuration.Json --version 3.1.3
 - dotnet add package Microsoft.Extensions.Configuration.EnvironmentVariables --version 3.1.3
 - dotnet add package Microsoft.Extensions.Configuration.CommandLine --version 3.1.3
+
+- dotnet add package Microsoft.EntityFrameworkCore.SqlServer --version 3.1.3
 - dotnet add package Microsoft.Extensions.Configuration.FileExtension --version 3.1.3
 - dotnet add package Microsoft.Extensions.DependencyInjection --version 3.1.3
 
