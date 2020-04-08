@@ -13,6 +13,8 @@
 - dotnet add package Microsoft.Extensions.Configuration.FileExtension --version 3.1.3
 - dotnet add package Microsoft.Extensions.DependencyInjection --version 3.1.3
 
+- dotnet add package Microsoft.Extensions.Logging.Console --version 3.1.3
+
 #### Git Branch
 
 - 01Configure

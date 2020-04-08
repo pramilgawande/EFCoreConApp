@@ -48,3 +48,6 @@ D:\Client\Mints\EFCoreConApp\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni
 D:\Client\Mints\EFCoreConApp\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
 D:\Client\Mints\EFCoreConApp\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 D:\Client\Mints\EFCoreConApp\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\Client\Mints\EFCoreConApp\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Configuration.dll
+D:\Client\Mints\EFCoreConApp\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Console.dll
+D:\Client\Mints\EFCoreConApp\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.ConfigurationExtensions.dll
