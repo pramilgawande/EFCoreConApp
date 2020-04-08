@@ -3,6 +3,7 @@
 using System.IO;
 using System.Linq;
 using EFCoreConApp.Models;
+using EFCoreConApp.Models.Entities;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -122,6 +123,104 @@ namespace EFCoreConApp
       //   WriteLine($"{ctr++} - {item}");
       // }
 
+      #region Insert New Record to Customers
+      // Customer cust = new Customer { CustomerID = "AAA", CompanyName = "Freelance", ContactName = "Mahesh", City = "Mumbai", Country = "India" };
+      // context.Customers.Add(cust);
+
+      // try
+      // {
+      //   int recEffected = context.SaveChanges();
+      //   if (recEffected == 1)
+      //   {
+      //     WriteLine("Customer Rec Added");
+      //   }
+      //   else
+      //   {
+      //     WriteLine("Counld Not Add the Customer Rec");
+      //   }
+      // }
+      // catch (Exception ex)
+      // {
+      //   WriteLine($"Error\n{ex.ToString()}");
+      // }
+
+      #endregion
+
+      #region Edit Customer
+      // Customer cust = context.Customers.FirstOrDefault(c => c.CustomerID == "AAA");
+
+      // WriteLine($"Cust\n{cust}");
+      // cust.City = "Bombay999";
+      // ReadKey(true);
+      // try
+      // {
+      //   int recEffected = context.SaveChanges();
+      //   if (recEffected == 1)
+      //   {
+      //     WriteLine("Customer Rec Updated");
+      //   }
+      //   else
+      //   {
+      //     WriteLine("Counld Not Update the Customer Rec");
+      //   }
+      // }
+      // catch (DbUpdateConcurrencyException ex)
+      // {
+      //   foreach (var item in ex.Entries)
+      //   {
+      //     if (item.Entity is Customer)
+      //     {
+      //       var proposedValues = item.CurrentValues;
+      //       var databaseValues = item.GetDatabaseValues();
+
+      //       foreach (var property in proposedValues.Properties)
+      //       {
+      //         var pValue = proposedValues[property];
+      //         var dValue = databaseValues[property];
+      //         WriteLine($"pValue: {pValue} and dValue: {dValue}");
+      //       }
+      //       item.OriginalValues.SetValues(databaseValues);
+
+      //       int recEffected = context.SaveChanges();
+      //       if (recEffected == 1)
+      //       {
+      //         WriteLine("Cust Rec Updated after Concurrency");
+      //       }
+      //       else
+      //       {
+      //         WriteLine("Counld not solve Concurrency");
+      //       }
+      //     }
+      //   }
+      // }
+      // catch (Exception ex)
+      // {
+      //   WriteLine($"Error\n{ex.ToString()}");
+      // }
+
+      #endregion
+
+      #region Delete
+      Customer cust = context.Customers.FirstOrDefault(c => c.CustomerID == "AAA");
+
+      context.Customers.Remove(cust);
+      try
+      {
+        int recEffected = context.SaveChanges();
+        if (recEffected == 1)
+        {
+          WriteLine("Rec Deleted");
+        }
+        else
+        {
+          WriteLine("Counld Not Delete the Customer Rec");
+        }
+      }
+      catch (Exception ex)
+      {
+        WriteLine($"Error\n{ex.ToString()}");
+      }
+      #endregion
     }
   }
 }
